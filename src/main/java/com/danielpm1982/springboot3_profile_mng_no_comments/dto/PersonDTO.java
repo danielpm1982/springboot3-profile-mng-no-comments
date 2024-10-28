@@ -21,7 +21,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Table(name = "PERSON")
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class PersonDTO {
+public class PersonDTO implements ObjectDTO{
     @Id
     @Column("ID")
     @NotNull
